@@ -17,7 +17,7 @@ module.exports = {
         'x-times-y-is-k': "url('/images/trident/x-times-y-is-k.png')",
         wavy: "url('/images/trident/wavy-pattern.png')",
         chevron: "url('/images/trident/chevron-pattern.png')",
-        'gradient-radial': 'radial-gradient(100% 100% at 50% 25%, var(--tw-gradient-stops))',
+        'gradient-radial': 'radial-gradient(100% 100% at 50% 25%, #3886f3)',
       }),
       linearBorderGradients: (theme) => ({
         directions: {
@@ -26,15 +26,15 @@ module.exports = {
           r: 'to right',
         },
         colors: {
-          'blue-pink': ['#0993ecBF', '#f338c3BF'],
-          'blue-pink-hover': ['#0993ec99', '#f338c399'],
+          'blue-pink': ['#0993ec', '#3886f3'],
+          'blue-pink-hover': ['#0993ec99', '#3873f3'],
           'pink-red-light-brown': ['#FE5A75', '#FEC464'],
         },
         background: {
           'dark-1000': '#000000',
           'dark-900': '#161522BF',
           'dark-800': '#202231',
-          'dark-pink-red': '#4e3034',
+          'dark-pink-red': '#6d91bf',
         },
         border: {
           1: '1px',
@@ -74,16 +74,16 @@ module.exports = {
         },
         pink: {
           DEFAULT: '#F338C3',
-          50: '#FDE5F7',
-          100: '#FCD2F1',
-          200: '#FAABE6',
-          300: '#F885DA',
-          400: '#F55ECF',
-          500: '#F338C3',
-          600: '#E50EAE',
-          700: '#B00B86',
-          800: '#7B075E',
-          900: '#460435',
+          50: '#6577a8',
+          100: '#6577a8',
+          200: '#6577a8',
+          300: '#6577a8',
+          400: '#6577a8',
+          500: '#6577a8',
+          600: '#6577a8',
+          700: '#6577a8',
+          800: '#6577a8',
+          900: '#6577a8',
         },
         green: {
           DEFAULT: '#7CFF6B',
@@ -127,7 +127,7 @@ module.exports = {
 
         'opaque-blue': '#0993ec80',
         'transparent-blue': '#0993EC2A',
-        'transparent-pink': '#FE5A752A',
+        'transparent-pink': '#243678',
         'opaque-pink': '#f338c380',
         'pink-red': {
           DEFAULT: '#FE5A75',
