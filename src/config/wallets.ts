@@ -9,8 +9,8 @@ import Cookies from 'js-cookie'
 import { InjectedConnector } from 'web3-react-injected-connector'
 
 import RPC from './rpc'
-
-const supportedChainIds = Object.values(ChainId) as number[]
+const additionalChainId = { OPBNB: 204 };
+const supportedChainIds = [...Object.values(ChainId), additionalChainId.OPBNB] as number[]
 
 // export const network = new NetworkConnector({
 //   defaultChainId: 1,
