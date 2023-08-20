@@ -56,7 +56,7 @@ const nextConfig = {
     return [
       {
         source: '/pools',
-        destination: '/swap',
+        destination: '/',
         permanent: true,
       },
       {
@@ -71,7 +71,7 @@ const nextConfig = {
       // },
       {
         source: '/home',
-        destination: '/swap',
+        destination: 'https://www.sushi.com/swap',
         permanent: true,
       },
       // {
@@ -118,7 +118,17 @@ const nextConfig = {
         source: '/bento/balances',
         destination: '/account',
         permanent: true,
-      }
+      },
+      {
+        source: '/analytics/dashboard',
+        destination: '/analytics',
+        permanent: true,
+      },
+      {
+        source: '/analytics/pairs/:path*',
+        destination: '/analytics/pools/:path*',
+        permanent: true,
+      },
     ]
   },
   async rewrites() {
@@ -156,6 +166,11 @@ const nextConfig = {
         destination: '/user',
       },
     ]
+  },
+  i18n: {
+    localeDetection: true,
+    locales,
+    defaultLocale: sourceLocale,
   },
   // serverRuntimeConfig: {},
   publicRuntimeConfig: {

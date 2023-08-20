@@ -11,7 +11,7 @@ export interface SwapProps {
   banners: BannerType[]
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const banners = await fetchBanners()
     return {
