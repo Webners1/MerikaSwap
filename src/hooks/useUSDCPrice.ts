@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from '../../sdk'
+import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from "@core-sdk"
 import { useMemo } from 'react'
 
 import { useActiveWeb3React } from '../services/web3'

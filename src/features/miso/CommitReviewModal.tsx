@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, ZERO } from '../../../sdk'
+import { Currency, CurrencyAmount, ZERO } from "@core-sdk"
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { RestrictedIcon } from 'app/components/Icon'

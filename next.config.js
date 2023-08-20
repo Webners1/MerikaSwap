@@ -26,6 +26,7 @@ const { withSentryConfig } = require('@sentry/nextjs')
  **/
 const nextConfig = {
   webpack: (config) => {
+    config.resolve.alias['@core-sdk'] = require.resolve('./src/@core-sdk/dist')
     config.module.rules = [
       ...config.module.rules,
       {

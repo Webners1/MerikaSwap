@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Percent } from '../../../../sdk'
+import { CurrencyAmount, Percent } from "@core-sdk"
 import GradientDot from 'app/components/GradientDot'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Typography from 'app/components/Typography'

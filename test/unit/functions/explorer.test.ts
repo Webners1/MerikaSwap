@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 import { getExplorerLink } from 'app/functions/explorer'
 
 describe('utils', () => {

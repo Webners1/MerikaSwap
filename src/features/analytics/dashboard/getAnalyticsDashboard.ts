@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 import { getBlockDaysAgo, getDayData, getFactory } from 'app/services/graph'
 
 export type AnalyticsDashboard = Awaited<ReturnType<typeof getAnalyticsDashboard>>

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from '../../../../sdk'
+import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from "@core-sdk"
 import { LTV } from 'app/features/kashi/constants'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { unwrappedToken } from 'app/functions'

@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 import { getBentoStrategies, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
 
 interface getAnalyticsTokensProps {

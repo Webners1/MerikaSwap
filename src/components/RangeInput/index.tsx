@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '../../../sdk'
+import { Currency } from "@core-sdk"
 import { FC } from 'react'
 
 import { classNames } from '../../functions'

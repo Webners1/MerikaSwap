@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 // @ts-ignore TYPE NEEDS FIXING
 import transakSDK from '@transak/transak-sdk'
 import { useActiveWeb3React } from 'app/services/web3'

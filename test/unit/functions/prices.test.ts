@@ -1,5 +1,5 @@
-import { ChainId, CurrencyAmount, JSBI, Token, TradeType } from '../../../sdk'
-import { Pair, Route, Trade } from '../../../sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, TradeType } from "@core-sdk"
+import { Pair, Route, Trade } from "@core-sdk"
 import { computeRealizedLPFeeAmount } from 'app/functions/prices'
 
 describe('prices', () => {

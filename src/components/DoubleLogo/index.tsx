@@ -1,4 +1,4 @@
-import { Currency } from '../../../sdk'
+import { Currency } from "@core-sdk"
 import { classNames } from 'app/functions'
 import React from 'react'
 

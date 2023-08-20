@@ -1,4 +1,4 @@
-import { Pair } from '../../../sdk'
+import { Pair } from "@core-sdk"
 import { Fee } from '@sushiswap/trident-sdk'
 import { TridentPool } from 'app/services/graph'
 

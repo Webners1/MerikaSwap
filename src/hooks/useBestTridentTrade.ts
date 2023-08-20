@@ -8,7 +8,7 @@ import {
   Trade as LegacyTrade,
   TradeType,
   WNATIVE,
-} from '../../sdk'
+} from "@core-sdk"
 import {
   ConstantProductPool,
   convertTinesSingleRouteToLegacyRoute,

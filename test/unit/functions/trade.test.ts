@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
-import { ChainId, CurrencyAmount, Percent, Token } from '../../../sdk'
+import { ChainId, CurrencyAmount, Percent, Token } from "@core-sdk"
 import { calculateGasMargin, calculateSlippageAmount } from 'app/functions/trade'
 
 describe('#calculateSlippageAmount', () => {

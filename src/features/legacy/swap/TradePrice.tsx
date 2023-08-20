@@ -1,4 +1,4 @@
-import { Currency, Price, ZERO } from '../../../../sdk'
+import { Currency, Price, ZERO } from "@core-sdk"
 import Typography from 'app/components/Typography'
 import { classNames } from 'app/functions'
 import { useUSDCPrice } from 'app/hooks'

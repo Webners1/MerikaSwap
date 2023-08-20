@@ -1,4 +1,4 @@
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import { PoolType } from '@sushiswap/trident-sdk'
 import { getApy } from 'app/functions'
 import {

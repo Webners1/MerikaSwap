@@ -2,7 +2,7 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '../../../../sdk'
+import { CurrencyAmount } from "@core-sdk"
 import CloseIcon from 'app/components/CloseIcon'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import QuestionHelper from 'app/components/QuestionHelper'

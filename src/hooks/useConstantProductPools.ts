@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, Token } from '../../sdk'
+import { Currency, CurrencyAmount, Token } from "@core-sdk"
 //@ts-ignore
 import { default as constantProductPoolArtifact } from '@sushiswap/trident/artifacts/contracts/pool/constant-product/ConstantProductPool.sol/ConstantProductPool.json'
 import { computeConstantProductPoolAddress, ConstantProductPool, Fee, PoolState } from '@sushiswap/trident-sdk'

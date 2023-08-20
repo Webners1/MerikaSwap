@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Token, Trade as LegacyTrade, TradeType } from '../../sdk'
+import { Currency, CurrencyAmount, Token, Trade as LegacyTrade, TradeType } from "@core-sdk"
 import { PoolState, Trade } from '@sushiswap/trident-sdk'
 
 export type TradeUnion =

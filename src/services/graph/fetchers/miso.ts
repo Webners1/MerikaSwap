@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 import { pager } from 'app/services/graph'
 import { misoCommitmentsQuery } from 'app/services/graph/queries/miso'
 

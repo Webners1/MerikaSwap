@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '../../../../sdk'
+import { Currency, CurrencyAmount } from "@core-sdk"
 
 export interface Assets {
   asset: CurrencyAmount<Currency>

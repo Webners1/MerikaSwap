@@ -10,8 +10,8 @@ import {
   TradeType,
   WNATIVE_ADDRESS,
   ZERO,
-} from '../../../../sdk'
-import { Trade as LegacyTrade } from '../../../sdk/dist/entities/Trade'
+} from "@core-sdk"
+import { Trade as LegacyTrade } from "@core-sdk"/dist/entities/Trade'
 import Button from 'app/components/Button'
 import Typography from 'app/components/Typography'
 import { Warning, Warnings } from 'app/entities/Warnings'

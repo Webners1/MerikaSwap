@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, NATIVE, WNATIVE } from '../../../sdk'
+import { ChainId, Currency, CurrencyAmount, NATIVE, WNATIVE } from "@core-sdk"
 
 export function unwrappedToken(currency: Currency): Currency {
   if (currency.isNative) return currency

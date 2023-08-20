@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 
 import ARBITRUM from './mappings/arbitrum'
 import AVALANCHE from './mappings/avalanche'

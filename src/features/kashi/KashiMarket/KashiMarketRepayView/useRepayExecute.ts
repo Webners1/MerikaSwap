@@ -14,8 +14,8 @@ import {
   SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS,
   TradeType,
   ZERO,
-} from '../../../../sdk'
-import { Trade as LegacyTrade } from '../../../sdk/dist/entities/Trade'
+} from "@core-sdk"
+import { Trade as LegacyTrade } from "@core-sdk"/dist/entities/Trade'
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { ZERO as BigNumberZERO } from 'app/functions'

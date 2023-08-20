@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Trade, TradeType } from '../../sdk'
+import { ChainId, Currency, CurrencyAmount, JSBI, Percent, Trade, TradeType } from "@core-sdk"
 import { TradeUnion } from 'app/types'
 
 import {

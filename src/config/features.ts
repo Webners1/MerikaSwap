@@ -1,4 +1,4 @@
-import { ChainId } from '../../sdk'
+import { ChainId } from "@core-sdk"
 import { Feature } from 'app/enums'
 
 type FeatureMap = { readonly [chainId in ChainId]?: Feature[] }

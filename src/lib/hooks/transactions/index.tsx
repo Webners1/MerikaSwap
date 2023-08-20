@@ -1,4 +1,4 @@
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'
 import { Transaction, TransactionInfo, transactionsAtom, TransactionType } from 'lib/state/transactions'
 import ms from 'ms.macro'

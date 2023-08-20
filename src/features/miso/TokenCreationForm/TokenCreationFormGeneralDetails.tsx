@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CHAIN_KEY } from '../../../../sdk'
+import { CHAIN_KEY } from "@core-sdk"
 import MISO from '@sushiswap/miso/exports/all.json'
 import Form from 'app/components/Form'
 import { useActiveWeb3React } from 'app/services/web3'

@@ -1,5 +1,5 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '../../sdk'
+import { ChainId, Token } from "@core-sdk"
 import { PoolType } from '@sushiswap/trident-sdk'
 import { fetcher, TridentPoolData } from 'app/services/graph'
 import { getTridentPositionsQuery } from 'app/services/graph/queries'

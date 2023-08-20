@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 import ExternalLink from 'app/components/ExternalLink'
 import Typography from 'app/components/Typography'
 import {

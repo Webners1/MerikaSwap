@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Percent } from '../../../../sdk'
+import { CurrencyAmount, Percent } from "@core-sdk"
 import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket/KashiMarketContext'
 import { classNames } from 'app/functions'

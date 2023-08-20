@@ -1,4 +1,4 @@
-import { Pair } from '../../../sdk'
+import { Pair } from "@core-sdk"
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import React, { FC } from 'react'
 

@@ -1,4 +1,4 @@
-import { Currency, Token } from '../../sdk'
+import { Currency, Token } from "@core-sdk"
 import { getCurrencyLogoUrls } from 'app/components/CurrencyLogo/CurrencyLogo'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCallback, useState } from 'react'

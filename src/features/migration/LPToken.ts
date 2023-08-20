@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Token } from '../../../sdk'
+import { Currency, CurrencyAmount, Token } from "@core-sdk"
 
 export default interface LPToken {
   id?: number

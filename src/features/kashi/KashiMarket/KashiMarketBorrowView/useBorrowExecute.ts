@@ -14,7 +14,7 @@ import {
   SUSHISWAP_MULTISWAPPER_ADDRESS,
   Trade as LegacyTrade,
   TradeType,
-} from '../../../../sdk'
+} from "@core-sdk"
 import KashiCooker from 'app/entities/KashiCooker'
 import { toShare, ZERO } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'

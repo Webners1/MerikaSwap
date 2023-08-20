@@ -1,4 +1,4 @@
-import { JSBI, Pair } from '../../../sdk'
+import { JSBI, Pair } from "@core-sdk"
 import SumUSDCValues from 'app/features/trident/SumUSDCValues'
 import { classNames } from 'app/functions'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'

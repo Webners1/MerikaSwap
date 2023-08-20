@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount } from '../../sdk'
+import { ChainId, Currency, CurrencyAmount } from "@core-sdk"
 import { STABLECOIN_AMOUNT_OUT } from 'app/hooks/useUSDCPrice'
 import { fetcher } from 'app/services/graph'
 import {

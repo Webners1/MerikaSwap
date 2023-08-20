@@ -17,7 +17,7 @@ import {
   toHex,
   Trade as LegacyTrade,
   TradeType,
-} from '../../sdk'
+} from "@core-sdk"
 import {
   ComplexPathParams,
   ExactInputParams,

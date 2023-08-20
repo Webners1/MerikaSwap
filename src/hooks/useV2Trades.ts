@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Trade, TradeType } from '../../sdk'
+import { Currency, CurrencyAmount, Pair, Trade, TradeType } from "@core-sdk"
 import { BETTER_TRADE_LESS_HOPS_THRESHOLD } from 'app/constants'
 import { isTradeBetter } from 'app/functions/trade'
 import { useMemo } from 'react'

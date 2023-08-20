@@ -1,5 +1,5 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { formatNumber, formatPercent } from 'app/functions'
 import { useAllTokens } from 'app/hooks/Tokens'

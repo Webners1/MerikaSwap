@@ -1,5 +1,5 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Currency, CurrencyAmount } from '../../../sdk'
+import { Currency, CurrencyAmount } from "@core-sdk"
 import { useUSDCValueSubgraph } from 'app/hooks/useUSDCSubgraph'
 import { FC, memo, ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
 

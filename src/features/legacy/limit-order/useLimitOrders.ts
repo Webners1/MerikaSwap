@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, Price, Token } from '../../../../sdk'
+import { CurrencyAmount, Percent, Price, Token } from "@core-sdk"
 import { LAMBDA_URL, LimitOrder, OrderStatus } from '@sushiswap/limit-order-sdk'
 import { DerivedOrder, LimitOrdersResponse, Order } from 'app/features/legacy/limit-order/types'
 import { useLimitOrderContract } from 'app/hooks'

@@ -1,4 +1,4 @@
-import { ChainId } from '../../../sdk'
+import { ChainId } from "@core-sdk"
 import { createStore, Store } from 'redux'
 
 import { addPopup, ApplicationModal, removePopup, setOpenModal, updateBlockNumber } from './actions'

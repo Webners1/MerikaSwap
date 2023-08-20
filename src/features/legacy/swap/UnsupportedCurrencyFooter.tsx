@@ -1,7 +1,7 @@
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '../../../../sdk'
+import { Currency } from "@core-sdk"
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import ExternalLink from 'app/components/ExternalLink'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'

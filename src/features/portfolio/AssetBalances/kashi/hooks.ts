@@ -1,5 +1,5 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Currency, CurrencyAmount } from '../../../../sdk'
+import { Currency, CurrencyAmount } from "@core-sdk"
 import useSearchAndSort from 'app/hooks/useSearchAndSort'
 
 export const reduceBalances = (balanceSources: CurrencyAmount<Currency>[]) =>

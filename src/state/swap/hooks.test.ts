@@ -1,4 +1,4 @@
-import { ChainId, SUSHI_ADDRESS } from '../../../sdk'
+import { ChainId, SUSHI_ADDRESS } from "@core-sdk"
 import { parse } from 'qs'
 
 import { Field } from './actions'

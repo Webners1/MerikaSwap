@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '../../../../sdk'
+import { Currency, CurrencyAmount } from "@core-sdk"
 import { tryParseAmount } from 'app/functions'
 import { v4 } from 'uuid'
 

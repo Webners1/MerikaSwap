@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Token } from '../../../sdk'
+import { ChainId, CurrencyAmount, Token } from "@core-sdk"
 import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions/feature'
 import {

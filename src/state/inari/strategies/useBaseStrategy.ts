@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '../../../../sdk'
+import { CurrencyAmount, Token } from "@core-sdk"
 import { e10 } from 'app/functions/math'
 import { ApprovalState, useApproveCallback } from 'app/hooks/useApproveCallback'
 import { BentoPermit } from 'app/hooks/useBentoMasterApproveCallback'

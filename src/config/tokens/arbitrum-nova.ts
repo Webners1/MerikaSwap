@@ -1,4 +1,4 @@
-import { ChainId, Token } from '../../../sdk'
+import { ChainId, Token } from "@core-sdk"
 
 export const USDC = new Token(
   ChainId.ARBITRUM_NOVA,

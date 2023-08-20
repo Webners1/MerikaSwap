@@ -1,4 +1,4 @@
-import { JSBI, ZERO } from '../../../sdk'
+import { JSBI, ZERO } from "@core-sdk"
 import { PROTOCOL_FEE, PROTOCOL_FEE_DIVISOR } from '@sushiswap/kashi-sdk'
 
 import { KashiMediumRiskLendingPair } from './KashiMediumRiskLendingPair'

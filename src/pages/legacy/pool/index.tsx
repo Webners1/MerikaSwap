@@ -1,7 +1,7 @@
 import { PlusIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '../../sdk'
+import { CurrencyAmount } from "@core-sdk"
 import Button from 'app/components/Button'
 import Loader from 'app/components/Loader'
 import FullPositionCard from 'app/components/PositionCard'

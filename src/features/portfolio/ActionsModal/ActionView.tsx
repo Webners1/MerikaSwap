@@ -1,7 +1,7 @@
 import { SwitchHorizontalIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE } from '../../../../sdk'
+import { NATIVE } from "@core-sdk"
 import { BentoboxIcon, WalletIcon } from 'app/components/Icon'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import { Feature } from 'app/enums/Feature'

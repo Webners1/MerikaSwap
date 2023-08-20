@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount, Price, Token } from '../../../sdk'
+import { Currency, CurrencyAmount, Price, Token } from "@core-sdk"
 import { GetState, SetState } from 'zustand'
 
 export type StoreSlice<T extends object, E extends object = T> = (

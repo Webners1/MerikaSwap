@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price, Token, USD } from '../../sdk'
+import { Currency, CurrencyAmount, Price, Token, USD } from "@core-sdk"
 import { useNativePrice, useTokens, useTridentTokens } from 'app/services/graph'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'

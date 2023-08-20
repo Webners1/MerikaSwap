@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Token } from '../../sdk'
+import { Currency, CurrencyAmount, Token } from "@core-sdk"
 import { useBentoBalancesV2 } from 'app/state/bentobox/hooks'
 import { useCurrencyBalances } from 'app/state/wallet/hooks'
 import { useMemo } from 'react'

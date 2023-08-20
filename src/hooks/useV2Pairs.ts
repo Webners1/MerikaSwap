@@ -1,6 +1,6 @@
 import { Interface } from '@ethersproject/abi'
 import IUniswapV2PairABI from '@sushiswap/core/abi/IUniswapV2Pair.json'
-import {  Currency, CurrencyAmount, FACTORY_ADDRESS, Pair } from '../../sdk'
+import {  Currency, CurrencyAmount, FACTORY_ADDRESS, Pair } from "@core-sdk"
 import { useMultipleContractSingleData } from 'app/lib/hooks/multicall'
 import { useMemo } from 'react'
 import { computePairAddress } from 'app/state/user/hooks'

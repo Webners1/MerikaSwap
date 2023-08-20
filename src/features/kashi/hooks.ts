@@ -2,7 +2,7 @@ import { defaultAbiCoder } from '@ethersproject/abi'
 import { getAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
-import { ChainId, JSBI, KASHI_ADDRESS, Token, ZERO } from '../../../sdk'
+import { ChainId, JSBI, KASHI_ADDRESS, Token, ZERO } from "@core-sdk"
 import { NETWORK_LABEL } from 'app/config/networks'
 import { CHAINLINK_PRICE_FEED_MAP, ChainlinkPriceFeedEntry } from 'app/config/oracles/chainlink'
 import { Feature } from 'app/enums'

@@ -1,5 +1,5 @@
 import { TransactionReceipt, TransactionResponse } from '@ethersproject/abstract-provider'
-import { Currency, CurrencyAmount, TradeType } from '../../sdk'
+import { Currency, CurrencyAmount, TradeType } from "@core-sdk"
 import { PrivateTxStatus } from 'app/entities/SushiGuard'
 import { atomWithImmer } from 'jotai/immer'
 

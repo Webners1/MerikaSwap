@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from '../../../sdk'
+import { Currency, CurrencyAmount, Price } from "@core-sdk"
 
 export const getPriceOfNewPool = (
   amounts: (CurrencyAmount<Currency> | undefined)[]

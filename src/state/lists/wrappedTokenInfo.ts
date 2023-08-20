@@ -1,4 +1,4 @@
-import { Currency, Token } from '../../../sdk'
+import { Currency, Token } from "@core-sdk"
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { isAddress } from 'functions/validate'
 

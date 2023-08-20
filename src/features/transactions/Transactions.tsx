@@ -1,7 +1,7 @@
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '../../../sdk'
+import { ChainId } from "@core-sdk"
 import { LoadingSpinner } from 'app/components/LoadingSpinner'
 import {
   TABLE_TABLE_CLASSNAME,

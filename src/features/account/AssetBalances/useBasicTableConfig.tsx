@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '../../../../sdk'
+import { Currency, CurrencyAmount } from "@core-sdk"
 import { AssetCell } from 'app/features/account/AssetBalances/AssetCell'
 import { ValueCell } from 'app/features/account/AssetBalances/ValueCell'
 import { Assets } from 'app/features/portfolio/AssetBalances/types'

@@ -1,7 +1,7 @@
 import ExclamationIcon from '@heroicons/react/outline/ExclamationIcon'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from '../../sdk'
+import { BAR_ADDRESS, ChainId, SUSHI, ZERO } from "@core-sdk"
 import Button from 'app/components/Button'
 import Container from 'app/components/Container'
 import Dots from 'app/components/Dots'

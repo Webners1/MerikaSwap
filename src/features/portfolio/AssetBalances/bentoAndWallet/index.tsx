@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE, ZERO } from '../../../../sdk'
+import { NATIVE, ZERO } from "@core-sdk"
 import Typography from 'app/components/Typography'
 import AssetBalances from 'app/features/portfolio/AssetBalances/AssetBalances'
 import { Assets } from 'app/features/portfolio/AssetBalances/types'

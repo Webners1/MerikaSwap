@@ -1,4 +1,4 @@
-import { Pair } from '../../../../sdk'
+import { Pair } from "@core-sdk"
 import { useV2Pairs } from 'app/hooks/useV2Pairs'
 import { useActiveWeb3React } from 'app/services/web3'
 import { toV2LiquidityToken, useTrackedTokenPairs } from 'app/state/user/hooks'

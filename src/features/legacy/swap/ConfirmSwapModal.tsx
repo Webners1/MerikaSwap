@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent, TradeVersion } from '../../../../sdk'
+import { Percent, TradeVersion } from "@core-sdk"
 import { toAmountCurrencyAmount } from 'app/functions'
 import { getTradeVersion } from 'app/functions/getTradeVersion'
 import useBentoRebases from 'app/hooks/useBentoRebases'

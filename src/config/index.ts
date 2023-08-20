@@ -1,4 +1,4 @@
-import { ChainId } from '../../sdk'
+import { ChainId } from "@core-sdk"
 
 const config = {
   // Global configuration

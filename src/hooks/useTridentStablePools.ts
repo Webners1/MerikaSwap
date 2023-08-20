@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, JSBI } from '../../sdk'
+import { Currency, CurrencyAmount, JSBI } from "@core-sdk"
 //@ts-ignore
 import HybridPoolArtifact from '@sushiswap/trident/artifacts/contracts/pool/hybrid/HybridPool.sol/HybridPool.json'
 import { computeHybridPoolAddress, Fee, HybridPool } from '@sushiswap/trident-sdk'

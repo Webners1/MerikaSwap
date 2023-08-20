@@ -10,7 +10,7 @@ import {
   KASHI_ADDRESS,
   Pair,
   Token,
-} from '../../../sdk'
+} from "@core-sdk"
 import { CHAINLINK_PRICE_FEED_MAP } from 'app/config/oracles/chainlink'
 import { BASES_TO_TRACK_LIQUIDITY_FOR, PINNED_PAIRS } from 'app/config/routing'
 import { e10 } from 'app/functions'

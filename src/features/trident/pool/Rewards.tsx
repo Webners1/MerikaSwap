@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, SUSHI } from '../../../../sdk'
+import { ChainId, SUSHI } from "@core-sdk"
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import ListPanel from 'app/components/ListPanel'
 import Typography from 'app/components/Typography'

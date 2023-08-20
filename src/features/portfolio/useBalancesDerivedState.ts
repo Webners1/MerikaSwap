@@ -1,4 +1,4 @@
-import { Currency } from '../../../sdk'
+import { Currency } from "@core-sdk"
 import { selectBalancesCurrency } from 'app/features/portfolio/portfolioSlice'
 import { useCurrency } from 'app/hooks/Tokens'
 import { useSelector } from 'react-redux'

@@ -1,5 +1,5 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import { useAuctionDocuments } from 'app/features/miso/context/hooks/useAuctionDocuments'
 import { useAuctionEnded } from 'app/features/miso/context/hooks/useAuctionEnded'
 import {

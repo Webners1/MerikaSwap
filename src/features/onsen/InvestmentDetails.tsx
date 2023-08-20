@@ -1,7 +1,7 @@
 import { getAddress } from '@ethersproject/address'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, CurrencyAmount, JSBI, Token, ZERO } from '../../../sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, ZERO } from "@core-sdk"
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { HeadlessUiModal } from 'app/components/Modal'

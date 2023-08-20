@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Token } from '../../../../sdk'
+import { Currency, CurrencyAmount, Token } from "@core-sdk"
 import {
   approveMasterContractAction,
   approveSLPAction,

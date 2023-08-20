@@ -1,7 +1,7 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import CHAINLINK_TOKENS from '@sushiswap/chainlink-whitelist/dist/sushiswap-chainlink.whitelist.json'
-import { ChainId, Currency, NATIVE, Token } from '../../../sdk'
+import { ChainId, Currency, NATIVE, Token } from "@core-sdk"
 import Button from 'app/components/Button'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import Typography from 'app/components/Typography'
@@ -170,15 +170,7 @@ export function CurrencySearch({
       </div>
       {allowManageTokenList && (
         <div className="flex justify-center">
-          <Button
-            size="sm"
-            id="list-token-manage-button"
-            onClick={() => setView(CurrencyModalView.manage)}
-            color="blue"
-            variant="empty"
-          >
-            {i18n._(t`Manage Token Lists`)}
-          </Button>
+        
         </div>
       )}
     </>

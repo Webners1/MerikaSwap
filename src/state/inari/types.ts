@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Token } from '../../../sdk'
+import { ChainId, CurrencyAmount, Token } from "@core-sdk"
 
 import { BaseStrategyHook } from './strategies/useBaseStrategy'
 import { BaseStrategyWithBentoBoxTraitHook } from './traits/useBentoBoxTrait'

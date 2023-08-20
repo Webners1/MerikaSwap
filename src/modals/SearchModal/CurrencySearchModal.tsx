@@ -1,4 +1,4 @@
-import { Currency, Token } from '../../sdk'
+import { Currency, Token } from "@core-sdk"
 import { TokenList } from '@uniswap/token-lists'
 import { HeadlessUiModal } from 'app/components/Modal'
 import usePrevious from 'app/hooks/usePrevious'

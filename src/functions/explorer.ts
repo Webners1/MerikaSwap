@@ -1,4 +1,4 @@
-import { ChainId } from '../../sdk'
+import { ChainId } from "@core-sdk"
 
 const explorers = {
   etherscan: (link: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {

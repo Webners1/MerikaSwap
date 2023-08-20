@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, ZERO } from '../../../../sdk'
+import { CurrencyAmount, ZERO } from "@core-sdk"
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'

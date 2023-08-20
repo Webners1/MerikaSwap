@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId } from '../../../sdk'
+import { ChainId } from "@core-sdk"
 import { Fraction } from 'app/entities/bignumber'
 import { useCloneRewarderContract, useComplexRewarderContract } from 'app/hooks/useContract'
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'

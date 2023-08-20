@@ -10,7 +10,7 @@ import {
   toElastic,
   Token,
   ZERO,
-} from '../../../sdk'
+} from "@core-sdk"
 import { accrue, AccrueInfo, computePairAddress, interestAccrue, takeFee } from '@sushiswap/kashi-sdk'
 
 import { accrueTotalAssetWithFee } from './functions'

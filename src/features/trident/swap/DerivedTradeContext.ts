@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent, TradeType } from '../../../../sdk'
+import { Currency, CurrencyAmount, Percent, TradeType } from "@core-sdk"
 import { Trade as LegacyTrade } from '../../../../sdk/dist/entities/Trade'
 import { Trade } from '@sushiswap/trident-sdk'
 import { createContext, useContext } from 'react'

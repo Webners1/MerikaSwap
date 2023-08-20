@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount, JSBI } from '../../sdk'
+import { CurrencyAmount, JSBI } from "@core-sdk"
 import { useMemo, useState } from 'react'
 
 function getNested(theObject: any, path: string, separator = '.') {

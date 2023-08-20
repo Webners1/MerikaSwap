@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { JSBI, Percent, TradeType, TradeVersion, WNATIVE, ZERO } from '../../../../sdk'
+import { JSBI, Percent, TradeType, TradeVersion, WNATIVE, ZERO } from "@core-sdk"
 import { selectTridentSwap, TypedField } from 'app/features/trident/swap/swapSlice'
 import useCurrenciesFromURL from 'app/features/trident/useCurrenciesFromURL'
 import { maxAmountSpend, toAmountCurrencyAmount } from 'app/functions'

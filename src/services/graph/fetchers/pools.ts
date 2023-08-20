@@ -1,5 +1,5 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '../../sdk'
+import { ChainId, Token } from "@core-sdk"
 import { Fee, PoolType } from '@sushiswap/trident-sdk'
 import { GRAPH_HOST, TRIDENT } from 'app/services/graph/constants'
 import {

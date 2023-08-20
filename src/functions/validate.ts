@@ -2,7 +2,7 @@
 
 import { getAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
-import { Token } from '../../../sdk'
+import { Token } from "@core-sdk"
 import { TokenAddressMap } from 'app/state/lists/hooks'
 
 /**

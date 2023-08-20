@@ -1,7 +1,7 @@
 import { I18n } from '@lingui/core'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, CurrencyAmount, SUSHI, SUSHI_ADDRESS, Token } from '../../../../sdk'
+import { ChainId, CurrencyAmount, SUSHI, SUSHI_ADDRESS, Token } from "@core-sdk"
 import { CRXSUSHI, XSUSHI } from 'app/config/tokens/ethereum'
 import { tryParseAmount } from 'app/functions/parse'
 import { useApproveCallback } from 'app/hooks/useApproveCallback'

@@ -1,4 +1,4 @@
-import { ChainId } from '../../../sdk'
+import { ChainId } from "@core-sdk"
 import { formatDateAgo, getExplorerLink } from 'app/functions'
 import React, { useMemo } from 'react'
 

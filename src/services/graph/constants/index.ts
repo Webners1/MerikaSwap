@@ -1,4 +1,4 @@
-import { ChainId } from '../../../../sdk'
+import { ChainId } from "@core-sdk"
 
 const THE_GRAPH = 'https://api.thegraph.com'
 const NAS_GRAPH = 'https://graph.kkt.one/node'

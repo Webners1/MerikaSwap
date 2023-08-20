@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent } from '../../sdk'
+import { ChainId, JSBI, Percent } from "@core-sdk"
 
 // TODO: Move some of this to config level...
 

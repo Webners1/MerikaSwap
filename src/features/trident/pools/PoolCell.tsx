@@ -1,4 +1,4 @@
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import Image from 'next/image'
 import React, { FC } from 'react'

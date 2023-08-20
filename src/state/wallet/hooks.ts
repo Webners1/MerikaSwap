@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '../../../sdk'
+import { CurrencyAmount, Token } from "@core-sdk"
 import { useTokenBalances, useTokenBalancesWithLoadingIndicator } from 'lib/hooks/useCurrencyBalance'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'

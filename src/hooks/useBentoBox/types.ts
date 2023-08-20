@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Contract } from '@ethersproject/contracts'
-import { ChainId, JSBI } from '../../sdk'
+import { ChainId, JSBI } from "@core-sdk"
 import { Signature } from 'ethers'
 
 export type Action<T, P = { data: string; value?: BigNumber }> = (x: T) => P

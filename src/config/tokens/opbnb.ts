@@ -1,4 +1,4 @@
-import { ChainId, Token } from '../../../sdk'
+import { ChainId, Token } from "@core-sdk"
 
 export const WETH = new Token(
   204,

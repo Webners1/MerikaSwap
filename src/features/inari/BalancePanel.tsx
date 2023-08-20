@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Token } from '../../../sdk'
+import { CurrencyAmount, Token } from "@core-sdk"
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Input from 'app/components/Input'
 import Typography from 'app/components/Typography'

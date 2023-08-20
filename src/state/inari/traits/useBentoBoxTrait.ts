@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '../../../../sdk'
+import { CurrencyAmount, Token } from "@core-sdk"
 import { ApprovalState } from 'app/hooks/useApproveCallback'
 import useBentoMasterApproveCallback, { BentoMasterApproveCallback } from 'app/hooks/useBentoMasterApproveCallback'
 import { useInariContract } from 'app/hooks/useContract'

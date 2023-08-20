@@ -1,4 +1,4 @@
-import { Token } from '../../sdk'
+import { Token } from "@core-sdk"
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import React, { FC } from 'react'
 

@@ -3,7 +3,7 @@
 import { getAddress } from '@ethersproject/address'
 import { BigNumberish } from '@ethersproject/bignumber'
 import { formatUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, Fraction, JSBI, Price } from '../../sdk'
+import { Currency, CurrencyAmount, Fraction, JSBI, Price } from "@core-sdk"
 // @ts-ignore TYPE NEEDS FIXING
 import Numeral from 'numeral'
 

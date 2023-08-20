@@ -1,4 +1,4 @@
-import { Percent } from '../../../sdk'
+import { Percent } from "@core-sdk"
 import Typography from 'app/components/Typography'
 import { warningSeverity } from 'app/functions/prices'
 import React, { FC } from 'react'

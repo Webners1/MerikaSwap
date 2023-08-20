@@ -1,4 +1,4 @@
-import { Currency, Token } from '../../sdk'
+import { Currency, Token } from "@core-sdk"
 import { useActiveWeb3React } from 'app/services/web3'
 import flatMap from 'lodash/flatMap'
 import { useMemo } from 'react'

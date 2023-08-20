@@ -1,5 +1,5 @@
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token } from '../../../../sdk'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Price, Token } from "@core-sdk"
 import {
   AuctionCreationWizardInput,
   AuctionCreationWizardInputFormatted,

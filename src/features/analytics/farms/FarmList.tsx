@@ -1,5 +1,5 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '../../../../sdk'
+import { Token } from "@core-sdk"
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import Table from 'app/components/Table'
 import { formatNumber, formatPercent } from 'app/functions'
