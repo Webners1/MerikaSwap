@@ -48,7 +48,7 @@ export const ConfirmationPendingContent: FC<ConfirmationPendingContentProps> = (
         <div className="w-16 py-8 m-auto">
         <Image
         src="https://i.ibb.co/CHMryhC/6-1.gif"
-        width='50px' height='50px'
+        width='80px' height='80px'
 
       />
         </div>
