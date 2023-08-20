@@ -70,7 +70,7 @@ const AuctionCommitter: FC = () => {
             className="text-low-emphesis"
             onClick={() => setValue(balance?.toExact())}
           >
-            Balance: {balance?.toSignificant(6)} {balance?.currency.symbol}
+            Balance: {balance?.toSignificant(6)} {balance?.currency?.symbol}
           </Typography>
         </div>
         <div className="flex rounded bg-dark-900 px-4 py-2.5 gap-4 items-center">
@@ -136,7 +136,7 @@ const AuctionCommitter: FC = () => {
                         {whitelistedAmount?.toSignificant(6)}
                       </Typography>
                       <Typography variant="xxs" className="text-high-emphesis" weight={700}>
-                        {whitelistedAmount?.currency.symbol}
+                        {whitelistedAmount?.currency?.symbol}
                       </Typography>
                     </div>
                   )}

@@ -63,7 +63,7 @@ export const useDepositExecute: UseDepositExecute = () => {
 
       if (result.success) {
         addTransaction(result.tx, {
-          summary: i18n._(t`Deposit ${depositAmount.toSignificant(6)} ${depositAmount.currency.symbol}`),
+          summary: i18n._(t`Deposit ${depositAmount.toSignificant(6)} ${depositAmount.currency?.symbol}`),
         })
 
         return result.tx

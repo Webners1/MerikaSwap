@@ -79,7 +79,7 @@ export const KashiMarketBorrowReviewModal: FC<KashiMarketBorrowReviewModal> = ({
                 <Typography weight={700} component="span" className="text-high-emphesis">
                   {collateralAmount?.toSignificant(6) || 0}{' '}
                   <Typography weight={700} className="text-low-emphesis" component="span">
-                    {collateralAmount?.currency.symbol}
+                    {collateralAmount?.currency?.symbol}
                   </Typography>
                 </Typography>
               </div>
@@ -93,7 +93,7 @@ export const KashiMarketBorrowReviewModal: FC<KashiMarketBorrowReviewModal> = ({
                 <Typography weight={700} component="span" className="text-high-emphesis">
                   {borrowAmount?.toSignificant(6) || 0}{' '}
                   <Typography weight={700} className="text-low-emphesis" component="span">
-                    {borrowAmount?.currency.symbol}
+                    {borrowAmount?.currency?.symbol}
                   </Typography>
                 </Typography>
               </div>

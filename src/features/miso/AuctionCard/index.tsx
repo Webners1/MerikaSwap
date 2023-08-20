@@ -155,7 +155,7 @@ const AuctionCard: FC<{ auction?: Auction; link?: boolean }> = ({ auction, link 
               {i18n._(t`Amount for sale`)}
             </Typography>
             <Typography variant="xs" weight={700}>
-              {formatNumber(auction.totalTokens?.toSignificant(6))} {auction.totalTokens?.currency.symbol}
+              {formatNumber(auction.totalTokens?.toSignificant(6))} {auction.totalTokens?.currency?.symbol}
             </Typography>
           </div>
         </div>
@@ -197,7 +197,7 @@ const AuctionCard: FC<{ auction?: Auction; link?: boolean }> = ({ auction, link 
             <div className="flex justify-between gap-0.5 py-2">
               <Typography variant="xs">{i18n._(t`Total Raised`)}</Typography>
               <Typography variant="xs" className="text-high-emphesis">
-                {auction.commitmentsTotal?.toSignificant(6)} {auction?.commitmentsTotal?.currency.symbol}
+                {auction.commitmentsTotal?.toSignificant(6)} {auction?.commitmentsTotal?.currency?.symbol}
               </Typography>
             </div>
             <div className="flex justify-between gap-0.5 py-2">

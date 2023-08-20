@@ -82,7 +82,7 @@ export function useApproveCallback(
       })
       .then((response: TransactionResponse) => {
         addTransaction(response, {
-          summary: 'Approve ' + amountToApprove.currency.symbol,
+          summary: 'Approve ' + amountToApprove.currency?.symbol,
           approval: { tokenAddress: token.address, spender: spender },
         })
       })
@@ -102,7 +102,7 @@ export function useApproveCallbackFromTrade(
 ) {
   const { chainId } = useActiveWeb3React()
   const amountToApprove = useMemo(
-    () => (trade && trade.inputAmount.currency.isToken ? trade.maximumAmountIn(allowedSlippage) : undefined),
+    () => (trade && trade.inputAmount.currency?.isToken ? trade.maximumAmountIn(allowedSlippage) : undefined),
     [trade, allowedSlippage]
   )
   return useApproveCallback(

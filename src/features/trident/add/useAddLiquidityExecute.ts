@@ -99,8 +99,8 @@ export const useAddLiquidityExecute: UseAddLiquidityExecute = () => {
           addTransaction(tx, {
             summary: i18n._(
               t`Add ${parsedAmountA?.toSignificant(3)} ${
-                parsedAmountA?.currency.symbol
-              } and ${parsedAmountB?.toSignificant(3)} ${parsedAmountB?.currency.symbol} into ${pool.token0.symbol}/${
+                parsedAmountA?.currency?.symbol
+              } and ${parsedAmountB?.toSignificant(3)} ${parsedAmountB?.currency?.symbol} into ${pool.token0.symbol}/${
                 pool.token1.symbol
               }`
             ),

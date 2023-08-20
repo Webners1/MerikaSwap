@@ -107,7 +107,7 @@ export const KashiMarketRepayReviewModal: FC<KashiMarketRepayReviewModal> = ({
                       {trade?.inputAmount?.toSignificant(6)}
                       <Typography weight={700} className="text-low-emphesis" component="span">
                         {' '}
-                        / {removeAmountCurrencyAmount.toSignificant(6)} {trade?.inputAmount.currency.symbol}
+                        / {removeAmountCurrencyAmount.toSignificant(6)} {trade?.inputAmount.currency?.symbol}
                       </Typography>{' '}
                     </Typography>
                   </div>
@@ -121,7 +121,7 @@ export const KashiMarketRepayReviewModal: FC<KashiMarketRepayReviewModal> = ({
                     <Typography weight={700} component="span" className="text-high-emphesis">
                       {repayAmountCurrencyAmount?.toSignificant(6)}{' '}
                       <Typography weight={700} className="text-low-emphesis" component="span">
-                        {repayAmountCurrencyAmount.currency.symbol}
+                        {repayAmountCurrencyAmount.currency?.symbol}
                       </Typography>
                     </Typography>
                   </div>
@@ -148,7 +148,7 @@ export const KashiMarketRepayReviewModal: FC<KashiMarketRepayReviewModal> = ({
                     <CurrencyLogo currency={market.collateral.token} size={20} />
                     <b>
                       {removeAmount?.greaterThan(0) ? removeAmount?.toSignificant(6) : '0'}{' '}
-                      {removeAmount?.currency.symbol}
+                      {removeAmount?.currency?.symbol}
                     </b>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ export const KashiMarketRepayReviewModal: FC<KashiMarketRepayReviewModal> = ({
                   <div className="inline-flex items-center gap-2">
                     <CurrencyLogo currency={market.asset.token} size={20} />
                     <b>
-                      {repayAmount?.greaterThan(0) ? repayAmount?.toSignificant(6) : '0'} {repayAmount?.currency.symbol}
+                      {repayAmount?.greaterThan(0) ? repayAmount?.toSignificant(6) : '0'} {repayAmount?.currency?.symbol}
                     </b>
                   </div>
                 </div>

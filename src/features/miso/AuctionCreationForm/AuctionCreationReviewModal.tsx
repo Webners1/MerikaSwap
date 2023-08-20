@@ -144,7 +144,7 @@ const AuctionCreationModal: FC<AuctionCreationModalProps> = ({ open, onDismiss: 
                   rel="noreferrer"
                   href={getExplorerLink(chainId, data.tokenAmount.currency.address, 'address')}
                 >
-                  {data.tokenAmount.currency.symbol}
+                  {data.tokenAmount.currency?.symbol}
                 </a>
               </Typography>
 

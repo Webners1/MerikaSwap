@@ -181,7 +181,7 @@ const ReviewDetailsStep: FC<{ children(isValid: boolean): ReactNode }> = ({ chil
               <Item
                 title={i18n._(t`Raise Amount`)}
                 value={`${minimumRaised?.toSignificant(6)} - ${maximumRaised?.toSignificant(6)} ${
-                  maximumRaised?.currency.symbol
+                  maximumRaised?.currency?.symbol
                 }`}
               />
             </>
@@ -196,7 +196,7 @@ const ReviewDetailsStep: FC<{ children(isValid: boolean): ReactNode }> = ({ chil
               <Item
                 title={i18n._(t`Raise Amount`)}
                 value={`${minimumRaised?.toSignificant(6)} - ${maximumRaised?.toSignificant(6)} ${
-                  maximumRaised?.currency.symbol
+                  maximumRaised?.currency?.symbol
                 }`}
               />
             </>

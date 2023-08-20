@@ -71,7 +71,7 @@ const CommitReviewStandardModal: FC<CommitReviewStandardModalProps> = ({
       await tx.wait()
 
       addTransaction(tx, {
-        summary: i18n._(t`Committed ${amount?.toSignificant(6)} ${amount.currency.symbol}`),
+        summary: i18n._(t`Committed ${amount?.toSignificant(6)} ${amount.currency?.symbol}`),
       })
     } catch (e) {
       // @ts-ignore TYPE NEEDS FIXING
@@ -129,7 +129,7 @@ const CommitReviewStandardModal: FC<CommitReviewStandardModalProps> = ({
                         {amount?.toSignificant(6)}
                       </Typography>
                       <Typography className="text-secondary" weight={700}>
-                        {amount?.currency.symbol}
+                        {amount?.currency?.symbol}
                       </Typography>
                     </div>
                     {auction.template !== AuctionTemplate.BATCH_AUCTION && (
@@ -141,7 +141,7 @@ const CommitReviewStandardModal: FC<CommitReviewStandardModalProps> = ({
                               {auction.tokenAmount(amount)?.toSignificant(6)}
                             </Typography>
                             <Typography className="text-secondary" weight={700}>
-                              {auction.tokenAmount(amount)?.currency.symbol}
+                              {auction.tokenAmount(amount)?.currency?.symbol}
                             </Typography>
                           </div>
                         )}

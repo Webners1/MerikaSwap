@@ -60,11 +60,11 @@ export const useLiquidationPrice: UseLiquidationPrice = ({ borrowAmount, collate
     }
 
     return invert
-      ? `1 ${totalBorrowed?.currency.symbol} = ${liquidationPrice?.toSignificant(6)} ${
-          totalCollateral?.currency.symbol
+      ? `1 ${totalBorrowed?.currency?.symbol} = ${liquidationPrice?.toSignificant(6)} ${
+          totalCollateral?.currency?.symbol
         }`
-      : `1 ${totalCollateral?.currency.symbol} = ${liquidationPrice?.invert().toSignificant(6)} ${
-          totalBorrowed?.currency.symbol
+      : `1 ${totalCollateral?.currency?.symbol} = ${liquidationPrice?.invert().toSignificant(6)} ${
+          totalBorrowed?.currency?.symbol
         }`
   } catch (e) {
     console.log(e)

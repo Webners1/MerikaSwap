@@ -49,11 +49,11 @@ const KashiLendingListItem: FC<KashiLendingListItem> = ({ market }) => {
     : undefined
 
   // invert
-  // ? `1 ${totalBorrowed?.currency.symbol} = ${liquidationPrice?.toSignificant(6)} ${
-  //     totalCollateral?.currency.symbol
+  // ? `1 ${totalBorrowed?.currency?.symbol} = ${liquidationPrice?.toSignificant(6)} ${
+  //     totalCollateral?.currency?.symbol
   //   }`
-  // : `1 ${totalCollateral?.currency.symbol} = ${liquidationPrice?.invert().toSignificant(6)} ${
-  //     totalBorrowed?.currency.symbol
+  // : `1 ${totalCollateral?.currency?.symbol} = ${liquidationPrice?.invert().toSignificant(6)} ${
+  //     totalBorrowed?.currency?.symbol
   //   }`
 
   const currentInterestPerYear = new Percent(market.currentInterestPerYear, 1e18)

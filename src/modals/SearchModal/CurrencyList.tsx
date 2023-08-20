@@ -21,7 +21,7 @@ import AutoSizer from 'react-virtualized-auto-sizer'
 import { FixedSizeList as List } from 'react-window'
 
 function currencyKey(currency: Currency): string {
-  return currency.isToken ? currency.address : 'ETHER'
+  return currency?.isToken ? currency.address : 'ETHER'
 }
 
 function Balance({ balance }: { balance: CurrencyAmount<Currency> }) {
@@ -78,7 +78,7 @@ const CurrencyRow: FC<CurrencyRow> = ({ currency, style }) => {
   const { onSelect, currency: selectedCurrency } = useCurrencyModalContext()
   const key = currencyKey(currency)
   const selectedTokenList = useCombinedActiveList()
-  const isOnSelectedList = isTokenOnList(selectedTokenList, currency.isToken ? currency : undefined)
+  const isOnSelectedList = isTokenOnList(selectedTokenList, currency?.isToken ? currency : undefined)
   const customAdded = useIsUserAddedToken(currency)
   const balance = useCurrencyBalance(account ?? undefined, currency)
 
@@ -100,7 +100,7 @@ const CurrencyRow: FC<CurrencyRow> = ({ currency, style }) => {
               {currency.name} {!isOnSelectedList && customAdded && '• Added by user'}
             </Typography>
             <Typography variant="sm" weight={700} className="text-high-emphesis">
-              {currency.symbol}
+              {currency?.symbol}
             </Typography>
           </div>
           <TokenTags currency={currency} />

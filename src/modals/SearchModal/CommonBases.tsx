@@ -43,7 +43,7 @@ const CommonBases: FC = () => {
             >
               <CurrencyLogo currency={currency} size={18} />
               <Typography variant="sm" className="font-semibold">
-                {currency.symbol}
+                {currency?.symbol}
               </Typography>
             </Button>
           )

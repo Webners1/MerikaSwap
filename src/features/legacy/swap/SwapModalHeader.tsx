@@ -57,7 +57,7 @@ const SwapModalHeader: FC<SwapModalHeader> = ({
             <div className="flex items-center gap-3">
               <CurrencyLogo currency={inputAmount?.currency} size={18} className="!rounded-full overflow-hidden" />
               <Typography variant="lg" weight={700} className="text-high-emphesis">
-                {inputAmount?.currency.symbol}
+                {inputAmount?.currency?.symbol}
               </Typography>
             </div>
           </div>
@@ -87,7 +87,7 @@ const SwapModalHeader: FC<SwapModalHeader> = ({
             <div className="flex items-center gap-3">
               <CurrencyLogo currency={outputAmount?.currency} size={18} className="!rounded-full overflow-hidden" />
               <Typography variant="lg" weight={700} className="text-high-emphesis">
-                {outputAmount?.currency.symbol}
+                {outputAmount?.currency?.symbol}
               </Typography>
             </div>
           </div>
@@ -121,7 +121,7 @@ const SwapModalHeader: FC<SwapModalHeader> = ({
           <Typography variant="xs" className="text-secondary">
             {i18n._(t`Output is estimated. You will receive at least`)}{' '}
             <Typography variant="xs" className="text-high-emphesis" weight={700} component="span">
-              {minimumAmountOut?.toSignificant(6)} {outputAmount?.currency.symbol}
+              {minimumAmountOut?.toSignificant(6)} {outputAmount?.currency?.symbol}
             </Typography>{' '}
             {i18n._(t`or the transaction will revert.`)}
           </Typography>
@@ -129,7 +129,7 @@ const SwapModalHeader: FC<SwapModalHeader> = ({
           <Typography variant="xs" className="text-secondary">
             {i18n._(t`Input is estimated. You will sell at most`)}{' '}
             <Typography variant="xs" className="text-high-emphesis" weight={700} component="span">
-              {maximumAmountIn?.toSignificant(6)} {inputAmount?.currency.symbol}
+              {maximumAmountIn?.toSignificant(6)} {inputAmount?.currency?.symbol}
             </Typography>{' '}
             {i18n._(t`or the transaction will revert.`)}
           </Typography>

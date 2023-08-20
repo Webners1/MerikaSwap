@@ -55,7 +55,7 @@ const AuctionStats: FC = () => {
                     auction.totalTokensCommitted?.greaterThan(ZERO) ? 'text-green/70' : 'text-low-emphesis'
                   )}
                 >
-                  {auction.totalTokensCommitted?.currency.symbol}
+                  {auction.totalTokensCommitted?.currency?.symbol}
                 </Typography>
               </div>
             }
@@ -89,7 +89,7 @@ const AuctionStats: FC = () => {
             <div className="flex justify-start items-baseline gap-1 lg:justify-end">
               {auction.commitmentsTotal?.toSignificant(6)}
               <Typography variant="sm" weight={700} className="text-low-emphesis">
-                {auction.totalTokensCommitted?.currency.symbol}
+                {auction.totalTokensCommitted?.currency?.symbol}
               </Typography>
             </div>
           }

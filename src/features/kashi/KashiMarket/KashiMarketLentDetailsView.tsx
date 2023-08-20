@@ -111,11 +111,11 @@ export const KashiMarketLentDetailsContentView: FC<KashiMarketLentDetailsView> =
           </Typography>
           <div className="flex gap-1">
             <Typography variant="xs" className="text-right text-secondary">
-              {lentPosition?.toSignificant(6)} {lentPosition?.currency.symbol}
+              {lentPosition?.toSignificant(6)} {lentPosition?.currency?.symbol}
             </Typography>
             <ArrowSmRightIcon width={14} className="text-secondary" />
             <Typography variant="xs" className="text-right">
-              {newLentPosition?.toSignificant(6)} {lentPosition?.currency.symbol}
+              {newLentPosition?.toSignificant(6)} {lentPosition?.currency?.symbol}
             </Typography>
           </div>
         </div>
@@ -158,11 +158,11 @@ export const KashiMarketLentDetailsView: FC<KashiMarketLentDetailsView> = ({ len
               </Typography>
               <div className="flex justify-between gap-1">
                 <Typography variant="xs" className="text-right text-secondary">
-                  {lentPosition?.toSignificant(6)} {lentPosition?.currency.symbol}
+                  {lentPosition?.toSignificant(6)} {lentPosition?.currency?.symbol}
                 </Typography>
                 <ArrowSmRightIcon width={14} className="text-secondary" />
                 <Typography variant="xs" className="text-right">
-                  {newLentPosition?.toSignificant(6)} {lentPosition?.currency.symbol}
+                  {newLentPosition?.toSignificant(6)} {lentPosition?.currency?.symbol}
                 </Typography>
               </div>
             </div>

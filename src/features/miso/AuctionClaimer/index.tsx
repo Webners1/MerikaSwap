@@ -71,18 +71,18 @@ const AuctionClaimer: FC = () => {
               {i18n._(
                 t`The auction has failed to reach its minimum target. You can withdraw a total committed amount of`
               )}{' '}
-              {auction.commitmentsTotal?.toSignificant(6)} {auction.commitmentsTotal?.currency.symbol}
+              {auction.commitmentsTotal?.toSignificant(6)} {auction.commitmentsTotal?.currency?.symbol}
             </Typography>
           ) : !auction.auctionInfo.finalized ? (
             <Typography variant="sm" weight={700} className="text-secondary">
               {i18n._(t`This auction has finished successfully! The owner of the auction has to finalize the auction before you can
               claim a total amount of`)}{' '}
-              {auction.tokensClaimable?.toSignificant(6)} {auction.tokensClaimable?.currency.symbol}
+              {auction.tokensClaimable?.toSignificant(6)} {auction.tokensClaimable?.currency?.symbol}
             </Typography>
           ) : (
             <Typography variant="sm" weight={700} className="text-secondary">
               {i18n._(t`This auction has finished successfully! You can claim a total amount of`)}{' '}
-              {auction.tokensClaimable?.toSignificant(6)} {auction.tokensClaimable?.currency.symbol}
+              {auction.tokensClaimable?.toSignificant(6)} {auction.tokensClaimable?.currency?.symbol}
             </Typography>
           )}
         </div>

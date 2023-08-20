@@ -25,7 +25,7 @@ export const AssetCell = (amount: CurrencyAmount<Currency>, balancesLoading?: bo
       <CurrencyLogo currency={amount.currency} className="!rounded-full" size={36} />
       <div className="flex flex-col">
         <Typography weight={700} className="text-left text-high-emphesis">
-          {amount.currency.symbol}
+          {amount.currency?.symbol}
         </Typography>
         {price && (
           <Typography weight={400} variant="sm" className="text-left text-low-emphesis">

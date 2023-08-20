@@ -68,7 +68,7 @@ export const KashiMarketDepositReviewModal: FC<KashiMarketDepositReviewModal> = 
               <div className="inline-flex gap-2">
                 <CurrencyLogo currency={depositAmount?.currency} size={20} />
                 <b>
-                  {depositAmount?.toSignificant(6)} {depositAmount?.currency.symbol}
+                  {depositAmount?.toSignificant(6)} {depositAmount?.currency?.symbol}
                 </b>
               </div>
             </div>

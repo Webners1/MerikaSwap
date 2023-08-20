@@ -122,7 +122,7 @@ const ListPanelItemLeft: FC<ListPanelItemLeftProps> = ({ amount, size, hideCurre
       {startAdornment && startAdornment}
       {!hideCurrencyLogo && <CurrencyLogo currency={amount?.currency} size={20} className="rounded-full" />}
       <Typography variant={size || 'sm'} className="text-high-emphesis" weight={700}>
-        {amount?.greaterThan(ZERO) ? amount?.toSignificant(6) : '0.00'} {amount?.currency.symbol}
+        {amount?.greaterThan(ZERO) ? amount?.toSignificant(6) : '0.00'} {amount?.currency?.symbol}
       </Typography>
     </div>
   )
@@ -197,7 +197,7 @@ const CurrencyAmountItem: FC<CurrencyAmountItemProps> = ({
       <div className="flex items-center gap-3 -ml-1">
         {!hideCurrencyLogo && <CurrencyLogo currency={amount?.currency} size={30} className="rounded-full" />}
         <Typography className="text-high-emphesis" weight={700} variant={size || 'base'}>
-          {amount?.currency.symbol}
+          {amount?.currency?.symbol}
         </Typography>
       </div>
       <Typography className="text-right text-high-emphesis" weight={700}>

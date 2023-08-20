@@ -131,8 +131,8 @@ export const useBorrowExecute: UseBorrowExecute = () => {
         addTransaction(result.tx, {
           summary: i18n._(
             t`Borrow ${borrowAmount.toSignificant(6)} ${
-              borrowAmount.currency.symbol
-            } using ${collateralAmount.toSignificant(6)} ${collateralAmount.currency.symbol} as collateral`
+              borrowAmount.currency?.symbol
+            } using ${collateralAmount.toSignificant(6)} ${collateralAmount.currency?.symbol} as collateral`
           ),
         })
       }
@@ -140,14 +140,14 @@ export const useBorrowExecute: UseBorrowExecute = () => {
       if (collateralAmount && !borrowAmount && result.success) {
         addTransaction(result.tx, {
           summary: i18n._(
-            t`Adding ${collateralAmount.toSignificant(6)} ${collateralAmount.currency.symbol} as collateral`
+            t`Adding ${collateralAmount.toSignificant(6)} ${collateralAmount.currency?.symbol} as collateral`
           ),
         })
       }
 
       if (!collateralAmount && borrowAmount && result.success) {
         addTransaction(result.tx, {
-          summary: i18n._(t`Borrow ${borrowAmount.toSignificant(6)} ${borrowAmount.currency.symbol}`),
+          summary: i18n._(t`Borrow ${borrowAmount.toSignificant(6)} ${borrowAmount.currency?.symbol}`),
         })
       }
 

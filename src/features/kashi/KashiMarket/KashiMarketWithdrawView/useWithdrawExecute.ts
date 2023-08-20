@@ -99,7 +99,7 @@ export const useWithdrawExecute: UseWithdrawExecute = () => {
 
       if (result.success) {
         addTransaction(result.tx, {
-          summary: i18n._(t`Withdraw ${withdrawAmount.toSignificant(6)} ${withdrawAmount.currency.symbol}`),
+          summary: i18n._(t`Withdraw ${withdrawAmount.toSignificant(6)} ${withdrawAmount.currency?.symbol}`),
         })
 
         return result.tx

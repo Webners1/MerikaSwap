@@ -77,7 +77,7 @@ export const KashiMarketRepayButton: FC<
     : repayAmount?.greaterThan(balance)
     ? i18n._(t`Insufficient balance`)
     : totalAvailableToRemove && removeAmount && removeAmount.greaterThan(totalAvailableToRemove)
-    ? i18n._(t`Not enough ${removeAmount.currency.symbol} available`)
+    ? i18n._(t`Not enough ${removeAmount.currency?.symbol} available`)
     : removeAmount?.greaterThan(market.userCollateralAmount)
     ? i18n._(t`Withdraw too large`)
     : repayAmount?.greaterThan(market.currentUserBorrowAmount)

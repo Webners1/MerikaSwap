@@ -88,7 +88,7 @@ const ClassicStandardAside = () => {
               <CurrencyLogo currency={el?.currency} size={20} />
               <Typography
                 // @ts-ignore TYPE NEEDS FIXING
-                id={el?.currency.symbol.toLowerCase() + `-min-liquidity-output`}
+                id={el?.currency?.symbol.toLowerCase() + `-min-liquidity-output`}
                 variant="sm"
                 weight={700}
                 className="text-high-emphesis"
@@ -99,7 +99,7 @@ const ClassicStandardAside = () => {
                 {el?.currency.wrapped.address === WNATIVE[chainId || 1].address && receiveNative && outputToWallet
                   ? // @ts-ignore TYPE NEEDS FIXING
                     NATIVE[chainId || 1].symbol
-                  : el?.currency.symbol}
+                  : el?.currency?.symbol}
               </Typography>
             </div>
             <Typography variant="sm" weight={700} className="text-secondary">

@@ -97,7 +97,7 @@ function Rewards({ rewards }: { rewards: Reward[] }): JSX.Element {
                   height="30px"
                   className="rounded-full"
                   layout="fixed"
-                  alt={reward.currency.symbol}
+                  alt={reward.currency?.symbol}
                 />
               )}
             </div>
@@ -108,7 +108,7 @@ function Rewards({ rewards }: { rewards: Reward[] }): JSX.Element {
             const decimals = 6 - String(reward?.rewardPerDay?.toFixed(0)).length
             return (
               <div key={i} className="text-base whitespace-nowrap">
-                {reward?.rewardPerDay?.toFixed(decimals > 0 ? decimals : 0)} {reward.currency.symbol}
+                {reward?.rewardPerDay?.toFixed(decimals > 0 ? decimals : 0)} {reward.currency?.symbol}
               </div>
             )
           })}

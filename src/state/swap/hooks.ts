@@ -114,7 +114,7 @@ export function useSwapActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency.isToken
+          currencyId: currency?.isToken
             ? currency.address
             : currency.isNative && currency.chainId !== ChainId.CELO
             ? 'ETH'

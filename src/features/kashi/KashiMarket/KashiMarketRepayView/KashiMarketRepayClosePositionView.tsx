@@ -92,7 +92,7 @@ export const KashiMarketRepayClosePositionView: FC<KashiMarketRepayClosePosition
                 >
                   <CurrencyLogo currency={market.collateral.token} size={20} />
                   <Typography variant="sm" weight={700}>
-                    Collateral {removeAmount.toSignificant(6)} {removeAmount.currency.symbol}
+                    Collateral {removeAmount.toSignificant(6)} {removeAmount.currency?.symbol}
                   </Typography>
                 </div>
                 <div
@@ -101,7 +101,7 @@ export const KashiMarketRepayClosePositionView: FC<KashiMarketRepayClosePosition
                 >
                   <CurrencyLogo currency={market.asset.token} size={20} />
                   <Typography variant="sm" weight={700}>
-                    Borrowed {repayAmount.toSignificant(6)} {repayAmount.currency.symbol}
+                    Borrowed {repayAmount.toSignificant(6)} {repayAmount.currency?.symbol}
                   </Typography>
                 </div>
               </div>

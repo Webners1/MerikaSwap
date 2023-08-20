@@ -252,7 +252,7 @@ const SwapAssetPanelHeader: FC<
         </Typography>
       )}
       <Typography variant="sm" className="!text-xl" weight={700}>
-        {!spendFromWallet ? currency.wrapped.symbol : currency.symbol}
+        {!spendFromWallet ? currency.wrapped.symbol : currency?.symbol}
       </Typography>
       {!hideSearchModal && <ChevronDownIcon width={18} />}
     </div>

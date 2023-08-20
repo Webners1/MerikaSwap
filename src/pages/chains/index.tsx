@@ -38,6 +38,6 @@ export default function Status({ fallbackData }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return { props: { fallbackData: await getChains() } }
 }

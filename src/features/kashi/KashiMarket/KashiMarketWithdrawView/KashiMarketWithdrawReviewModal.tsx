@@ -66,7 +66,7 @@ export const KashiMarketWithdrawReviewModal: FC<KashiMarketWithdrawReviewModal> 
               <div className="inline-flex gap-2">
                 <CurrencyLogo currency={withdrawAmount?.currency} size={20} />
                 <b>
-                  {withdrawAmount?.toSignificant(6)} {withdrawAmount?.currency.symbol}
+                  {withdrawAmount?.toSignificant(6)} {withdrawAmount?.currency?.symbol}
                 </b>
               </div>
             </div>

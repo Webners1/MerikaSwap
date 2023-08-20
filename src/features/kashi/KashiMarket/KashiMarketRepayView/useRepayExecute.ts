@@ -110,8 +110,8 @@ export const useRepayExecute: UseRepayExecute = () => {
         if (result.success) {
           addTransaction(result.tx, {
             summary: i18n._(
-              t`Repay ${borrowed.toSignificant(6)} ${borrowed.currency.symbol} using ${amountIn.toSignificant(6)} ${
-                amountIn.currency.symbol
+              t`Repay ${borrowed.toSignificant(6)} ${borrowed.currency?.symbol} using ${amountIn.toSignificant(6)} ${
+                amountIn.currency?.symbol
               } as collateral`
             ),
           })

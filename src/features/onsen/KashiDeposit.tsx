@@ -84,7 +84,7 @@ const KashiDeposit = ({ market, header }: { market: KashiMediumRiskLendingPair; 
 
     if (result.success) {
       addTransaction(result.tx, {
-        summary: i18n._(t`Deposit ${parsedDepositValue.toSignificant(6)} ${parsedDepositValue.currency.symbol}`),
+        summary: i18n._(t`Deposit ${parsedDepositValue.toSignificant(6)} ${parsedDepositValue.currency?.symbol}`),
       })
 
       return result.tx

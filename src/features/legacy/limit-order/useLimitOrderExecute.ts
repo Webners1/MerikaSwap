@@ -99,7 +99,7 @@ const useLimitOrderExecute: UseLimitOrderExecute = () => {
 
           await tx.wait()
           addTransaction(tx, {
-            summary: `Approve limit orders and Deposit ${inputAmount.currency.symbol} into BentoBox`,
+            summary: `Approve limit orders and Deposit ${inputAmount.currency?.symbol} into BentoBox`,
           })
           dispatch(setLimitOrderAttemptingTxn(false))
           dispatch(setLimitOrderBentoPermit(undefined))

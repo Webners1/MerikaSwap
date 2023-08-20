@@ -26,11 +26,11 @@ export function formatExecutionPrice(
     return ''
   }
   return inverted
-    ? `${trade.executionPrice.invert().toSignificant(6)} ${trade.inputAmount.currency.symbol} / ${
-        trade.outputAmount.currency.symbol
+    ? `${trade.executionPrice.invert().toSignificant(6)} ${trade.inputAmount.currency?.symbol} / ${
+        trade.outputAmount.currency?.symbol
       }`
-    : `${trade.executionPrice.toSignificant(6)} ${trade.outputAmount.currency.symbol} / ${
-        trade.inputAmount.currency.symbol
+    : `${trade.executionPrice.toSignificant(6)} ${trade.outputAmount.currency?.symbol} / ${
+        trade.inputAmount.currency?.symbol
       }`
 }
 

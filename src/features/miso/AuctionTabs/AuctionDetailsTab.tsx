@@ -79,7 +79,7 @@ const AuctionDetailsTab: FC<AuctionDetailsTabProps> = ({ auction, active }) => {
                 {auction.totalTokens
                   ?.multiply(new Percent(Number(auction.launcherInfo.liquidityPercent), 10000))
                   ?.toSignificant(6)}{' '}
-                {auction.totalTokens?.currency.symbol} + {Number(auction.launcherInfo.liquidityPercent) / 100}% of{' '}
+                {auction.totalTokens?.currency?.symbol} + {Number(auction.launcherInfo.liquidityPercent) / 100}% of{' '}
                 {auction.paymentToken.symbol} proceeds
               </div>
             </>
@@ -164,7 +164,7 @@ const AuctionDetailsTab: FC<AuctionDetailsTabProps> = ({ auction, active }) => {
           <div className="flex gap-1">
             {auction.totalTokens?.toSignificant(6)}{' '}
             <Typography variant="sm" weight={700}>
-              {auction.totalTokens?.currency.symbol}
+              {auction.totalTokens?.currency?.symbol}
             </Typography>
           </div>
         }
@@ -175,7 +175,7 @@ const AuctionDetailsTab: FC<AuctionDetailsTabProps> = ({ auction, active }) => {
           <div className="flex gap-1">
             {totalSupply?.toSignificant(6)}{' '}
             <Typography variant="sm" weight={700}>
-              {totalSupply?.currency.symbol}
+              {totalSupply?.currency?.symbol}
             </Typography>
           </div>
         }
@@ -213,7 +213,7 @@ const AuctionDetailsTab: FC<AuctionDetailsTabProps> = ({ auction, active }) => {
             <div className="flex gap-1">
               {auction.minimumTargetRaised.toSignificant(6)}{' '}
               <Typography variant="sm" weight={700}>
-                {auction.minimumTargetRaised.currency.symbol}
+                {auction.minimumTargetRaised.currency?.symbol}
               </Typography>
             </div>
           }
@@ -226,7 +226,7 @@ const AuctionDetailsTab: FC<AuctionDetailsTabProps> = ({ auction, active }) => {
             <div className="flex gap-1">
               {auction.maximumTargetRaised.toSignificant(6)}{' '}
               <Typography variant="sm" weight={700}>
-                {auction.maximumTargetRaised.currency.symbol}
+                {auction.maximumTargetRaised.currency?.symbol}
               </Typography>
             </div>
           }

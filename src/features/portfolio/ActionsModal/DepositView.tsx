@@ -57,7 +57,7 @@ const DepositView: FC<DepositViewProps> = ({ onClose, onBack }) => {
     : !walletBalance
     ? i18n._(t`Loading balance`)
     : valueCA?.greaterThan(walletBalance)
-    ? i18n._(t`Insufficient ${valueCA.currency.symbol} balance`)
+    ? i18n._(t`Insufficient ${valueCA.currency?.symbol} balance`)
     : ''
 
   return (

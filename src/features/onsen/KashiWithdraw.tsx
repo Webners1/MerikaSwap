@@ -82,7 +82,7 @@ const KashiWithdraw = ({ market, header }: { market: KashiMediumRiskLendingPair;
 
     if (result.success) {
       addTransaction(result.tx, {
-        summary: i18n._(t`Withdraw ${parsedWithdrawValue.toSignificant(6)} ${parsedWithdrawValue.currency.symbol}`),
+        summary: i18n._(t`Withdraw ${parsedWithdrawValue.toSignificant(6)} ${parsedWithdrawValue.currency?.symbol}`),
       })
 
       return result.tx

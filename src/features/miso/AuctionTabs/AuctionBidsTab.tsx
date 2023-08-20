@@ -42,7 +42,7 @@ export const useCommitmentTableConfig = (commitments?: AuctionCommitment[]) => {
                 return (
                   <span className="flex gap-1">
                     {props.value.toSignificant(6)}
-                    <span className="text-secondary">{props.value.currency.symbol}</span>
+                    <span className="text-secondary">{props.value.currency?.symbol}</span>
                   </span>
                 )
               },

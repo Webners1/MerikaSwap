@@ -27,15 +27,15 @@ export function ConfirmAddModalBottom({
         <div className="flex items-center justify-between">
           <div className="text-sm text-high-emphesis">{i18n._(t`Rates`)}</div>
           <div className="text-sm font-bold justify-center items-center flex right-align pl-1.5 text-high-emphesis">
-            {`1 ${parsedAmounts[Field.CURRENCY_A]?.currency.symbol} = ${price?.toSignificant(4)} ${
-              parsedAmounts[Field.CURRENCY_B]?.currency.symbol
+            {`1 ${parsedAmounts[Field.CURRENCY_A]?.currency?.symbol} = ${price?.toSignificant(4)} ${
+              parsedAmounts[Field.CURRENCY_B]?.currency?.symbol
             }`}
           </div>
         </div>
         <div className="flex items-center justify-end">
           <div className="text-sm font-bold justify-center items-center flex right-align pl-1.5 text-high-emphesis">
-            {`1 ${parsedAmounts[Field.CURRENCY_B]?.currency.symbol} = ${price?.invert()?.toSignificant(4)} ${
-              parsedAmounts[Field.CURRENCY_A]?.currency.symbol
+            {`1 ${parsedAmounts[Field.CURRENCY_B]?.currency?.symbol} = ${price?.invert()?.toSignificant(4)} ${
+              parsedAmounts[Field.CURRENCY_A]?.currency?.symbol
             }`}
           </div>
         </div>
@@ -46,14 +46,14 @@ export function ConfirmAddModalBottom({
           <div className="text-sm text-secondary">{i18n._(t`${currencies[Field.CURRENCY_A]?.symbol} Deposited`)}</div>
           <div className="text-sm font-bold justify-center items-center flex right-align pl-1.5 text-high-emphesis">
             <div>{parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)}</div>
-            <span className="ml-1">{parsedAmounts[Field.CURRENCY_A]?.currency.symbol}</span>
+            <span className="ml-1">{parsedAmounts[Field.CURRENCY_A]?.currency?.symbol}</span>
           </div>
         </div>
         <div className="flex items-center justify-between">
           <div className="text-sm text-secondary">{i18n._(t`${currencies[Field.CURRENCY_B]?.symbol} Deposited`)}</div>
           <div className="text-sm font-bold justify-center items-center flex right-align pl-1.5 text-high-emphesis">
             <div>{parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)}</div>
-            <span className="ml-1">{parsedAmounts[Field.CURRENCY_B]?.currency.symbol}</span>
+            <span className="ml-1">{parsedAmounts[Field.CURRENCY_B]?.currency?.symbol}</span>
           </div>
         </div>
         <div className="flex items-center justify-between">

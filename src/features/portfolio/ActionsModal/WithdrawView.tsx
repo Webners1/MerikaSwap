@@ -59,7 +59,7 @@ const WithdrawView: FC<WithdrawViewProps> = ({ onClose, onBack }) => {
     : !bentoBalance
     ? i18n._(t`Loading balance`)
     : valueCA?.greaterThan(bentoBalance)
-    ? i18n._(t`Insufficient ${valueCA.currency.symbol} balance`)
+    ? i18n._(t`Insufficient ${valueCA.currency?.symbol} balance`)
     : ''
 
   const disabled = !!error || attemptingTxn

@@ -66,7 +66,7 @@ export const KashiMarketBorrowButton: FC<KashiMarketBorrowButtonProps> = ({
     : collateralAmount?.greaterThan(balance)
     ? i18n._(t`Insufficient balance`)
     : totalAvailableToBorrow && borrowAmount && borrowAmount.greaterThan(totalAvailableToBorrow)
-    ? i18n._(t`Not enough ${borrowAmount.currency.symbol} available`)
+    ? i18n._(t`Not enough ${borrowAmount.currency?.symbol} available`)
     : ''
 
   const buttonText = error

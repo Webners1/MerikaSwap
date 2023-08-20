@@ -90,7 +90,7 @@ const AssetInput: AssetInput<AssetInputProps> = ({
       >
         <div className="flex gap-0.5 items-center">
           <Typography id={props.id} variant="h3" weight={700} className="text-high-emphesis">
-            {props.currency.symbol}
+            {props.currency?.symbol}
           </Typography>
           {props.onSelect && (
             <>
@@ -247,7 +247,7 @@ const AssetInputPanel = ({
             )}
           </Typography>
           <Typography
-            id={currency.symbol + '-usdc-value'}
+            id={currency?.symbol + '-usdc-value'}
             variant="xs"
             className={error ? 'text-red' : usdcValue && value ? 'text-green' : 'text-low-emphesis'}
           >
@@ -336,7 +336,7 @@ const AssetInputPanelBalance: FC<AssetInputPanelBalanceProps> = ({
         onClick={() => onClick(balance)}
         id={id}
       >
-        {balance ? `${balance.toSignificant(6)} ${balance.currency.symbol}` : '0.0000'}
+        {balance ? `${balance.toSignificant(6)} ${balance.currency?.symbol}` : '0.0000'}
       </Typography>
     </div>
   )

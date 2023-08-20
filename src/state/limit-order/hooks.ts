@@ -48,7 +48,7 @@ export function useLimitOrderActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency.isToken ? currency.address : currency.isNative ? 'ETH' : '',
+          currencyId: currency?.isToken ? currency.address : currency.isNative ? 'ETH' : '',
         })
       )
     },

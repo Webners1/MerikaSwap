@@ -110,7 +110,7 @@ export const useRemoveLiquidityExecute = () => {
         if (tx?.hash) {
           addTransaction(tx, {
             summary: i18n._(
-              t`Remove ${slpAmountToRemove?.toSignificant(3)} ${slpAmountToRemove?.wrapped.currency.symbol}`
+              t`Remove ${slpAmountToRemove?.toSignificant(3)} ${slpAmountToRemove?.wrapped.currency?.symbol}`
             ),
           })
           await tx.wait()

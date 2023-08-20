@@ -120,7 +120,7 @@ export function useCurrencyBalances(
     () =>
       currencies?.map((currency) => {
         if (!account || !currency) return undefined
-        if (currency.isToken) return tokenBalances[currency.address]
+        if (currency?.isToken) return tokenBalances[currency.address]
         if (currency.isNative) return ethBalance[account]
         return undefined
       }) ?? [],

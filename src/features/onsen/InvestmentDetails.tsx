@@ -195,13 +195,13 @@ const InvestmentDetails = ({ farm }) => {
                   {i === 0 && (
                     <RewardRow
                       value={formatNumber(pendingSushi?.toSignificant(6) ?? 0)}
-                      symbol={reward.currency.symbol}
+                      symbol={reward.currency?.symbol}
                     />
                   )}
-                  {i === 1 && <RewardRow value={formatNumber(pendingReward)} symbol={reward.currency.symbol} />}
+                  {i === 1 && <RewardRow value={formatNumber(pendingReward)} symbol={reward.currency?.symbol} />}
                 </>
               ) : (
-                <RewardRow value={formatNumber(pendingReward)} symbol={reward.currency.symbol} />
+                <RewardRow value={formatNumber(pendingReward)} symbol={reward.currency?.symbol} />
               )}
             </div>
           )
