@@ -110,10 +110,6 @@ function MyApp({ Component, pageProps, fallback, err }) {
     load(locale)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [locale])
-useEffect(()=>{
-  router.push('/swap');
-
-},[store])
   // Allows for conditionally setting a provider to be hoisted per page
   const Provider = Component.Provider || Fragment
 
