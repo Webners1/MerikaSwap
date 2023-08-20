@@ -107,7 +107,7 @@ export function useApproveCallbackFromTrade(
   )
   return useApproveCallback(
     amountToApprove,
-    chainId ? (trade instanceof V2Trade ? chainId == 204
+    chainId ? (trade instanceof V2Trade ? chainId === 204
       ? '0xEE5128f6c8e2cdfb1e5f2A01fe470aCe680aF85c'
       //@ts-ignore
       : ROUTER_ADDRESS[chainId] : undefined) : undefined

@@ -31,7 +31,7 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
           FACTORY_ADDRESS[tokenA.chainId]
             ? computePairAddress({
               factoryAddress:
-              tokenA.chainId == 204
+              tokenA.chainId === 204
                 ? '0xa7408904620F14C4FEB898c8c20c2189636d4009'
                 : FACTORY_ADDRESS[tokenA.chainId],
                 tokenA,

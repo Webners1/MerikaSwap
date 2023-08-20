@@ -10235,7 +10235,7 @@ export function useMiniChefContract(withSignerIfPossible?: boolean): Contract | 
 
 export function useFactoryContract(): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId ? chainId == 204
+  return useContract(chainId ? chainId === 204
       ? '0xa7408904620F14C4FEB898c8c20c2189636d4009'
       //@ts-ignore
       : FACTORY_ADDRESS[chainId] : undefined, FACTORY_ABI, false)
@@ -10244,7 +10244,7 @@ export function useFactoryContract(): Contract | null {
 export function useRouterContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
   // @ts-ignore TYPE NEEDS FIXING
-  return useContract(chainId == 204
+  return useContract(chainId === 204
       ? '0xEE5128f6c8e2cdfb1e5f2A01fe470aCe680aF85c'
       //@ts-ignore
       : ROUTER_ADDRESS[chainId], ROUTER_ABI, withSignerIfPossible)
