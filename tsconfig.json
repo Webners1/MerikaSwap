@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@core-sdk": ["./@core-sdk/*"],
+      "@core-sdk/dist": ["./@core-sdk/*"],
       "app/animation/*": ["./animation/*"],
       "app/components": ["./components/index.ts"],
       "app/components/*": ["./components/*"],

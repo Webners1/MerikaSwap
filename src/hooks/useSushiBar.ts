@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from 
+import { CurrencyAmount, Token } from "@core-sdk"
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
 

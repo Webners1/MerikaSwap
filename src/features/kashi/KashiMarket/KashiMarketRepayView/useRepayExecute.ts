@@ -15,7 +15,7 @@ import {
   TradeType,
   ZERO,
 } from "@core-sdk"
-import { Trade as LegacyTrade } from "@core-sdk"/dist/entities/Trade'
+import { Trade as LegacyTrade } from "@core-sdk/dist/entities/Trade"
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { ZERO as BigNumberZERO } from 'app/functions'

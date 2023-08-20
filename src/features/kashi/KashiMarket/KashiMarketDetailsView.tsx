@@ -4,7 +4,7 @@ import { ArrowSmRightIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from "@core-sdk"
-import { Trade as LegacyTrade } from '../../../../sdk/dist/entities/Trade'
+import { Trade as LegacyTrade } from '@core-sdk/dist/entities/Trade'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Tooltip from 'app/components/Tooltip'
 import Typography from 'app/components/Typography'
