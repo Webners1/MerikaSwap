@@ -83,7 +83,7 @@ const WrapButton: FC = () => {
 
         return (
           <div className="flex">
-            <Button fullWidth id="wrap-button" loading={loading} color="gradient" disabled={disabled} onClick={execute}>
+            <Button fullWidth id="wrap-button" loading={loading} color="blue" disabled={disabled} onClick={execute}>
               {buttonText}
             </Button>
           </div>

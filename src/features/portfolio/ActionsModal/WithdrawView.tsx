@@ -93,7 +93,7 @@ const WithdrawView: FC<WithdrawViewProps> = ({ onClose, onBack }) => {
           </Typography>
         </div>
       </HeadlessUiModal.BorderedContent>
-      <Button loading={attemptingTxn} color="gradient" disabled={disabled} onClick={execute}>
+      <Button loading={attemptingTxn} color="blue" disabled={disabled} onClick={execute}>
         <Typography variant="sm" weight={700} className={!error ? 'text-high-emphesis' : 'text-low-emphasis'}>
           {buttonText}
         </Typography>

@@ -44,8 +44,7 @@ const Manage: FC = () => {
           </div>
         ))}
       </div>
-      {tabIndex === 0 && <ManageLists />}
-      {tabIndex === 1 && <ManageTokens />}
+ 
     </>
   )
 }

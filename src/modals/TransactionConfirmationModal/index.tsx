@@ -16,6 +16,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useSwapState } from 'app/state/swap/hooks'
 import Lottie from 'lottie-react'
 import React, { FC, useMemo } from 'react'
+import Image from 'next/image'
 
 interface ConfirmationPendingContentProps {
   onDismiss: () => void
@@ -45,7 +46,10 @@ export const ConfirmationPendingContent: FC<ConfirmationPendingContentProps> = (
       )}
       <HeadlessUiModal.BorderedContent className="flex flex-col items-center justify-center gap-1">
         <div className="w-16 py-8 m-auto">
-          <Lottie animationData={loadingRollingCircle} autoplay loop />
+        <Image
+        src="https://i.ibb.co/QC0kNr9/6.gif"
+
+      />
         </div>
         <Typography variant="lg" weight={700} className="text-white">
           {pendingText}

@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, InstagramIcon, MediumIcon, TelegramIcon, TwitterIcon } from 'app/components/Icon'
+import { DiscordIcon, GithubIcon, InstagramIcon, MediumIcon, TelegramIcon, TwitterIcon } from 'app/components/Icon'
 import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
 import { Feature } from 'app/enums'
@@ -33,27 +33,23 @@ const Footer = () => {
               {i18n._(t`Our community is building a comprehensive decentralized trading platform for the future of finance. Join
               us!`)}
             </Typography>
-   
+            <div className="flex items-center gap-4">
+             
+             <a href="https://twitter.com/merakiswap" target="_blank" rel="noreferrer">
+               <TwitterIcon width={16} className="text-low-emphesis" />
+             </a>
+             <a href="https://t.me/merakiswap" target="_blank" rel="noreferrer">
+               <TelegramIcon width={16} className="text-low-emphesis" />
+             </a>
+             <a href="https://merakiswap.gitbook.io/merakiswap/" target="_blank" rel="noreferrer">
+               <GithubIcon width={16} className="text-low-emphesis" />
+             </a>
+           
+             
+           </div>
           </div>
     
-         
-          {/* <div className="flex flex-col gap-1 text-right xs:text-right md:text-left lg:text-right">
-            <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
-              {i18n._(t`Developers`)}
-            </Typography>
-            <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
-              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`GitBook`)}
-              </Typography>
-            </a>
-            <a href="https://github.com/sushiswap" target="_blank" rel="noreferrer">
-              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`GitHub`)}
-              </Typography>
-            </a>
-          
-           
-          </div> */}
+      
        
        
           <div className="flex flex-col gap-1">

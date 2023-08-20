@@ -337,7 +337,7 @@ const Swap = ({ banners }: SwapProps) => {
       case 3:
         return 'text-yellow'
       case 4:
-        return 'text-red'
+        return 'text-blue'
     }
   }, [priceImpactSeverity])
 
@@ -418,7 +418,7 @@ const Swap = ({ banners }: SwapProps) => {
           )}
 
           {false ? (
-            <Button color="red" disabled fullWidth className="rounded-2xl md:rounded">
+            <Button color="blue" disabled fullWidth className="rounded-2xl md:rounded">
               {i18n._(t`Unsupported Asset`)}
             </Button>
           ) : !account ? (
@@ -453,7 +453,7 @@ const Swap = ({ banners }: SwapProps) => {
               )}
               {approvalState === ApprovalState.APPROVED && (
                 <Button
-                  color={isValid && priceImpactSeverity > 2 ? 'red' : 'gradient'}
+                  color={isValid && priceImpactSeverity > 2 ? 'blue' : 'blue'}
                   onClick={() => {
                     if (isExpertMode) {
                       handleSwap()
@@ -484,7 +484,7 @@ const Swap = ({ banners }: SwapProps) => {
             </div>
           ) : (
             <Button
-              color={isValid && priceImpactSeverity > 2 && !swapCallbackError ? 'red' : 'gradient'}
+              color={isValid && priceImpactSeverity > 2 && !swapCallbackError ? 'gradient' : 'gradient'}
               fullWidth
               onClick={() => {
                 if (isExpertMode) {
