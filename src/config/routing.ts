@@ -699,6 +699,11 @@ export const COMMON_BASES: ChainTokenList = {
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WRAPPED_NATIVE_ONLY,
+  [204]:[
+OPBNB.MRK,
+...WRAPPED_NATIVE_ONLY[ChainId.OPBNB],
+
+  ],
   [ChainId.ETHEREUM]: [
     ...WRAPPED_NATIVE_ONLY[ChainId.ETHEREUM],
     ETHEREUM.DAI,
