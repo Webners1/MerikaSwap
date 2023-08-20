@@ -17,7 +17,7 @@ import {
   toHex,
   Trade as LegacyTrade,
   TradeType,
-} from '@sushiswap/core-sdk'
+} from '../../sdk'
 import {
   ComplexPathParams,
   ExactInputParams,

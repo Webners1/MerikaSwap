@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
+import { CurrencyAmount, Token } from '../../sdk'
 import { useSingleCallResult } from 'app/lib/hooks/multicall'
 import { useMemo } from 'react'
 

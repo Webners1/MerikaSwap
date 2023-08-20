@@ -4,7 +4,7 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { ArrowLeftIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
+import { ChainId, NATIVE, Percent, WNATIVE, WNATIVE_ADDRESS } from '../../sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Input from 'app/components/Input'
@@ -426,8 +426,8 @@ export default function Remove() {
                 <Typography variant="xs" weight={700}>
                   {oneCurrencyIsETH ? (
                     <Link
-                      href={`/remove/${currencyA?.isNative ? WNATIVE_ADDRESS[chainId] : currencyIdA}/${
-                        currencyB?.isNative ? WNATIVE_ADDRESS[chainId] : currencyIdB
+                      href={`/remove/${currencyA?.isNative ? "0x4200000000000000000000000000000000000006" : currencyIdA}/${
+                        currencyB?.isNative ? "0x4200000000000000000000000000000000000006" : currencyIdB
                       }`}
                     >
                       <a className="text-baseline text-blue opacity-80 hover:opacity-100 focus:opacity-100 whitespace-nowrap">

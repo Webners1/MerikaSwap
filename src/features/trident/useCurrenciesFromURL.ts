@@ -1,4 +1,4 @@
-import { ChainId, Currency, NATIVE, SUSHI } from '@sushiswap/core-sdk'
+import { ChainId, Currency, NATIVE, SUSHI } from '../../../sdk'
 import { Fee } from '@sushiswap/trident-sdk'
 import { MRK } from 'app/config/tokens/opbnb'
 import { useCurrency } from 'app/hooks/Tokens'

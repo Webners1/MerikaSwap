@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
+import { NATIVE, WNATIVE, WNATIVE_ADDRESS } from '../../../../sdk'
 import Button from 'app/components/Button'
 import Dots from 'app/components/Dots'
 import { useDerivedTridentSwapContext } from 'app/features/trident/swap/DerivedTradeContext'
@@ -50,7 +50,7 @@ const WrapButton: FC = () => {
     }
 
     if (!spendFromWallet && receiveToWallet) {
-      return await withdraw(WNATIVE_ADDRESS[chainId], parsedAmounts?.[0]?.quotient.toString().toBigNumber(0))
+      return await withdraw("0x4200000000000000000000000000000000000006", parsedAmounts?.[0]?.quotient.toString().toBigNumber(0))
     }
 
     if (spendFromWallet && !receiveToWallet) {

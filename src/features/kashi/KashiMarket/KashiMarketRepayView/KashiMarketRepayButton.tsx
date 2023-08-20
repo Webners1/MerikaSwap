@@ -10,8 +10,8 @@ import {
   TradeType,
   WNATIVE_ADDRESS,
   ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
+} from '../../../../sdk'
+import { Trade as LegacyTrade } from '../../../sdk/dist/entities/Trade'
 import Button from 'app/components/Button'
 import Typography from 'app/components/Typography'
 import { Warning, Warnings } from 'app/entities/Warnings'
@@ -99,7 +99,7 @@ export const KashiMarketRepayButton: FC<
   const warnings = new Warnings()
   warnings
     .addError(
-      Boolean(chainId && asset.wrapped.address === WNATIVE_ADDRESS[chainId] && repayFromWallet && repayMax),
+      Boolean(chainId && asset.wrapped.address === "0x4200000000000000000000000000000000000006" && repayFromWallet && repayMax),
       `You cannot MAX repay ${asset.symbol} directly from your wallet. Please deposit your ${asset.symbol} into the BentoBox first, then repay. Because your debt is slowly accruing interest we can't predict how much it will be once your transaction gets mined.`
     )
     .addError(

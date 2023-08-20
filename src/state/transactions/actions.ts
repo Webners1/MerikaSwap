@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '../../../sdk'
 import { PrivateTxStatus } from 'app/entities/SushiGuard'
 
 export interface SerializableTransactionReceipt {

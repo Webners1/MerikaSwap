@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
+import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from '../../../sdk'
 import AssetInput from 'app/components/AssetInput'
 import Button from 'app/components/Button'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -29,7 +29,7 @@ const KashiDeposit = ({ market, header }: { market: KashiMediumRiskLendingPair; 
   const [depositValue, setDepositValue] = useState('')
 
   const isNative = useMemo(
-    () => (chainId && chainId in WNATIVE_ADDRESS ? WNATIVE_ADDRESS[chainId] === asset.address : undefined),
+    () => (chainId && chainId in WNATIVE_ADDRESS ? "0x4200000000000000000000000000000000000006" === asset.address : undefined),
     [asset.address, chainId]
   )
   const ethBalance = useNativeCurrencyBalances(isNative ? [account ?? undefined] : [])

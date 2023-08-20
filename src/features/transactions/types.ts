@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '../../../sdk'
 
 export interface TransactionTableData {
   type: string

@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '../../../../sdk'
 import { getApy } from 'app/functions'
 import { getBlockDaysAgo, getPairs } from 'app/services/graph'
 

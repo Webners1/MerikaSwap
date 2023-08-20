@@ -1,6 +1,6 @@
 import { arrayify } from '@ethersproject/bytes'
 import { parseBytes32String } from '@ethersproject/strings'
-import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
+import { ChainId, Currency, NATIVE, Token, WNATIVE, WNATIVE_ADDRESS } from '../../sdk'
 import { createTokenFilterFunction } from 'app/functions/filtering'
 import { isAddress } from 'app/functions/validate'
 // import { NEVER_RELOAD, useSingleCallResult } from 'app/state/multicall-2/hooks'
@@ -197,7 +197,7 @@ export function useCurrency(currencyId: string | undefined): Currency | null | u
 
   if (isETH && isDual) {
     // @ts-ignore TYPE NEEDS FIXING
-    currencyId = WNATIVE_ADDRESS[chainId]
+    currencyId = "0x4200000000000000000000000000000000000006"
   }
 
   const token = useToken(useNative ? undefined : currencyId)

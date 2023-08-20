@@ -1,6 +1,6 @@
 import { getAddress } from '@ethersproject/address'
 import { AddressZero } from '@ethersproject/constants'
-import { WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
+import { WNATIVE_ADDRESS } from '../../sdk'
 import {
   Action,
   BatchAction,
@@ -21,7 +21,7 @@ export const depositAction: Action<DepositActionPayload> = ({
   chainId,
 }) => {
   const checksumAddress = getAddress(tokenAddress)
-  if (checksumAddress === WNATIVE_ADDRESS[chainId]) {
+  if (checksumAddress === "0x4200000000000000000000000000000000000006") {
     return {
       data: bentobox.interface.encodeFunctionData('deposit', [AddressZero, account, account, 0, share]),
       value: amount,
@@ -38,7 +38,7 @@ export const withdrawAction: Action<WithdrawAction> = ({ bentobox, tokenAddress,
   const checksumAddress = getAddress(tokenAddress)
   return {
     data: bentobox.interface.encodeFunctionData('withdraw', [
-      checksumAddress === WNATIVE_ADDRESS[chainId] ? AddressZero : checksumAddress,
+      checksumAddress === "0x4200000000000000000000000000000000000006" ? AddressZero : checksumAddress,
       account,
       account,
       amount,

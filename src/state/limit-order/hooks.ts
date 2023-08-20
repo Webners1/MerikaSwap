@@ -11,7 +11,7 @@ import {
   TradeType,
   WNATIVE_ADDRESS,
   ZERO,
-} from '@sushiswap/core-sdk'
+} from '../../../sdk'
 import { isAddress, tryParseAmount } from 'app/functions'
 import { useCurrency } from 'app/hooks/Tokens'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
@@ -124,7 +124,7 @@ function validatedRecipient(recipient: any): string | undefined {
 export function queryParametersToSwapState(chainId: ChainId, parsedQs: ParsedQs) {
   let inputCurrency = parseCurrencyFromURLParameter(parsedQs.inputCurrency)
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency)
-  const eth = chainId === ChainId.CELO ? WNATIVE_ADDRESS[chainId] : 'ETH'
+  const eth = chainId === ChainId.CELO ? "0x4200000000000000000000000000000000000006" : 'ETH'
   const sushi = SUSHI_ADDRESS[chainId]
   if (inputCurrency === '' && outputCurrency === '') {
     inputCurrency = eth
