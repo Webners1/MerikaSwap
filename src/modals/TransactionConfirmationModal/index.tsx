@@ -47,7 +47,8 @@ export const ConfirmationPendingContent: FC<ConfirmationPendingContentProps> = (
       <HeadlessUiModal.BorderedContent className="flex flex-col items-center justify-center gap-1">
         <div className="w-16 py-8 m-auto">
         <Image
-        src="https://i.ibb.co/QC0kNr9/6.gif"
+        src="https://i.ibb.co/CHMryhC/6-1.gif"
+        width='50px' height='50px'
 
       />
         </div>
