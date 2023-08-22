@@ -698,10 +698,11 @@ export const COMMON_BASES: ChainTokenList = {
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  ...WRAPPED_NATIVE_ONLY,
   [204]:[
 OPBNB.MRK,
 ...WRAPPED_NATIVE_ONLY[ChainId.OPBNB],
+
+  new Token(ChainId.OPBNB, '0xa9ad1484d9bfb27adbc2bf50a6e495777cc8cff2', 8, 'BUSD', 'BUSD'),
 
   ],
   [ChainId.ETHEREUM]: [
@@ -875,9 +876,15 @@ export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {
   ],
   [204]: [
     // @ts-ignore TYPE NEEDS FIXING
-  [WRAPPED_NATIVE_ONLY[204],
+  [WRAPPED_NATIVE_ONLY[204][0],
     
     // @ts-ignore TYPE NEEDS FIXING
     OPBNB.MRK],
+    [
+      new Token(ChainId.OPBNB, '0xa9ad1484d9bfb27adbc2bf50a6e495777cc8cff2', 8, 'BUSD', 'BUSD'),
+      OPBNB.MRK,
+    ],
+    // @ts-ignore TYPE NEEDS FIXING
+    
   ],
 }
